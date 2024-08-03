@@ -35,6 +35,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="video"
+        options={{
+          title: 'Candy Quiz', // Different title
+          tabBarIcon: ({ color }) => <TabBarIcon name="birthday-cake" color={color} />, // Different icon
+          // Explicitly hide the header for this screen
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
         name="two"
         options={{
           title: 'Posters',
@@ -42,7 +51,14 @@ export default function TabLayout() {
           // Explicitly hide the header for this screen
           headerShown: false,
         }}
+        
       />
+
+    
+
+
+      
     </Tabs>
+    
   );
 }

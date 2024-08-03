@@ -101,7 +101,7 @@ const Mp3Player = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>MP3 Player</Text>
+      <Text style={styles.title}>Candy Player</Text>
       <FlatList
         data={songs}
         keyExtractor={(item) => item.id}
@@ -117,12 +117,12 @@ const Mp3Player = () => {
                 >
                   <FontAwesome name={isPlaying && currentSong === item.file ? "pause" : "play"} size={24} color="#fff" />
                 </TouchableOpacity>
-                <TouchableOpacity
+                {/* <TouchableOpacity
                   style={styles.iconButton}
                   onPress={() => downloadSong(item.file, item.title)}
                 >
                   <FontAwesome name="download" size={24} color="#fff" />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
               </View>
               {currentSong === item.file && (
                 <Slider
